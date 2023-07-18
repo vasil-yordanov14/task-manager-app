@@ -1,0 +1,37 @@
+.dashboard {
+  width: 100%;
+  background-image: linear-gradient(to left, #7784b0, #384162);
+}
+.form-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 10vh;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  justify-content: flex-start;
+  padding: 10px 0;
+  background-image: linear-gradient(to right, #9f80f4, #f96cab);
+}
+
+.list-container h1 {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+  .list-container h1 {
+    font-size: 20px;
+  }
+}

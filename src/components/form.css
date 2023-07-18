@@ -1,0 +1,86 @@
+form {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  font-size: 25px;
+  letter-spacing: 3px;
+  color: white;
+  height: 100%;
+}
+form input {
+  background-image: linear-gradient(to right, #9f80f4, #f96cab);
+  outline: none;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  height: 30px;
+  color: white;
+  flex: 2;
+}
+.submit-btn,
+.download-btn {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 8px;
+  text-transform: capitalize;
+  border: none;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9f80f4, #f96cab);
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  flex: 1;
+}
+.submit-btn:hover,
+.download-btn:hover {
+  color: black;
+  background-image: linear-gradient(to right, #80f4f0, #cbf654);
+  transition: 0.8s;
+}
+
+/* Mobile layout */
+
+@media only screen and (max-width: 1200px) {
+  form {
+    font-size: 15px;
+    width: 100%;
+    margin: 0px 10px;
+  }
+  .submit-btn,
+  .download-btn {
+    height: 95%;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  form {
+    font-size: 10px;
+  }
+  form input {
+    max-width: 18%;
+  }
+  .submit-btn,
+  .download-btn {
+    height: 95%;
+    max-width: 80px;
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  form {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  form input {
+    min-width: 60%;
+  }
+  .download-btn,
+  .submit-btn {
+    min-width: 60%;
+    font-size: 14px;
+  }
+}
